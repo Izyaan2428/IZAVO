@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">IZAVO</string>
+    <string name="quick_add_tile_label">Add Expense</string>
+    <!-- Set this before external beta distribution. Empty opens an unaddressed email draft. -->
+    <string name="feedback_email">support.izavo@gmail.com</string>
+</resources>

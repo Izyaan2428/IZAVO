@@ -1,0 +1,38 @@
+# Machine-local Android and IDE state
+.gradle/
+.kotlin/
+.idea/
+**/build/
+local.properties
+*.iml
+.externalNativeBuild/
+.cxx/
+captures/
+.figma-assets/
+
+# Signing material and private configuration
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+secrets.properties
+*.p12
+*.pfx
+*.pem
+*.key
+.env
+.env.*
+
+# Generated packages, diagnostics, and OS metadata
+*.apk
+*.aab
+*.ap_
+*.dex
+*.log
+*.hprof
+*.prof
+coverage/
+*.exec
+*.ec
+Thumbs.db
+.DS_Store

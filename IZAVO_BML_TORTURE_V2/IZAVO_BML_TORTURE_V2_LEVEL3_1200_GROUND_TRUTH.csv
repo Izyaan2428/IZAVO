@@ -1,0 +1,1201 @@
+row_number,transaction_type,direction,amount_mvr,identity,financial_meaning,category,correct_review_choice,should_create_expense,should_require_review,expected_group_identity,duplicate_of_row,reversal_of_row,note
+1,Purchase,OUT,78.17,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+2,Purchase,OUT,131.34,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+3,Purchase,OUT,184.51,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+4,Purchase,OUT,237.68,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+5,Bill Payment,OUT,290.85,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+6,Salary,IN,10582,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+7,ATM Withdrawal,OUT,397.19,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+8,Credit Card Payment,OUT,450.36,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+9,Favara Debit,OUT,27.0,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+10,Transfer Debit,OUT,80.17,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+11,Favara Debit,OUT,133.34,Fathimath Leeza,UNKNOWN,,DONT_REMEMBER,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+12,Favara Credit,IN,186.51,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+13,Favara Credit,IN,239.68,Mariyam Naaz,REFUND,,REFUND,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+14,Transfer Credit,IN,292.85,Ali Shaheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+15,Transfer Debit,OUT,346.02,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+16,Favara Debit,OUT,399.19,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+17,Favara Credit,IN,452.36,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+18,Purchase,OUT,29.0,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+19,Purchase,OUT,82.17,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+20,Purchase,OUT,135.34,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+21,Purchase,OUT,188.51,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+22,Bill Payment,OUT,241.68,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+23,Salary,IN,12231,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+24,ATM Withdrawal,OUT,348.02,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+25,Credit Card Payment,OUT,401.19,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+26,Favara Debit,OUT,454.36,Mariyam Naaz,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+27,Transfer Debit,OUT,31.0,Fathimath Leeza,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+28,Favara Debit,OUT,84.17,Ahmed Rasheed,UNKNOWN,,DONT_REMEMBER,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+29,Favara Credit,IN,137.34,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+30,Favara Credit,IN,190.51,Fathimath Leeza,REFUND,,REFUND,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+31,Transfer Credit,IN,243.68,Mariyam Naaz,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+32,Transfer Debit,OUT,296.85,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+33,Favara Debit,OUT,350.02,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+34,Favara Credit,IN,403.19,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+35,Purchase,OUT,456.36,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+36,Purchase,OUT,33.0,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+37,Purchase,OUT,86.17,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+38,Purchase,OUT,139.34,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+39,Bill Payment,OUT,192.51,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+40,Salary,IN,13880,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+41,ATM Withdrawal,OUT,298.85,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+42,Credit Card Payment,OUT,352.02,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+43,Favara Debit,OUT,405.19,Fathimath Leeza,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+44,Transfer Debit,OUT,458.36,Ahmed Rasheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+45,Favara Debit,OUT,35.0,Hussain Shafeeq,UNKNOWN,,DONT_REMEMBER,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+46,Favara Credit,IN,88.17,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+47,Favara Credit,IN,141.34,Ahmed Rasheed,REFUND,,REFUND,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+48,Transfer Credit,IN,194.51,Fathimath Leeza,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+49,Transfer Debit,OUT,247.68,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+50,Favara Debit,OUT,300.85,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+51,Favara Credit,IN,354.02,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+52,Purchase,OUT,407.19,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+53,Purchase,OUT,460.36,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+54,Purchase,OUT,37.0,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+55,Purchase,OUT,90.17,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+56,Bill Payment,OUT,143.34,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+57,Salary,IN,10529,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+58,ATM Withdrawal,OUT,249.68,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+59,Credit Card Payment,OUT,302.85,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+60,Favara Debit,OUT,356.02,Ahmed Rasheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+61,Transfer Debit,OUT,409.19,Hussain Shafeeq,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+62,Favara Debit,OUT,462.36,Ali Shaheed,UNKNOWN,,DONT_REMEMBER,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+63,Favara Credit,IN,39.0,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+64,Favara Credit,IN,92.17,Hussain Shafeeq,REFUND,,REFUND,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+65,Transfer Credit,IN,145.34,Ahmed Rasheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+66,Transfer Debit,OUT,198.51,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+67,Favara Debit,OUT,251.68,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+68,Favara Credit,IN,304.85,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+69,Purchase,OUT,358.02,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+70,Purchase,OUT,411.19,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+71,Purchase,OUT,464.36,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+72,Purchase,OUT,41.0,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+73,Bill Payment,OUT,94.17,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+74,Salary,IN,12178,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+75,ATM Withdrawal,OUT,200.51,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+76,Credit Card Payment,OUT,253.68,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+77,Favara Debit,OUT,306.85,Hussain Shafeeq,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+78,Transfer Debit,OUT,360.02,Ali Shaheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+79,Favara Debit,OUT,413.19,Mariyam Naaz,UNKNOWN,,DONT_REMEMBER,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+80,Favara Credit,IN,466.36,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+81,Favara Credit,IN,43.0,Ali Shaheed,REFUND,,REFUND,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+82,Transfer Credit,IN,96.17,Hussain Shafeeq,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+83,Transfer Debit,OUT,149.34,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+84,Favara Debit,OUT,202.51,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+85,Favara Credit,IN,255.68,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+86,Purchase,OUT,308.85,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+87,Purchase,OUT,362.02,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+88,Purchase,OUT,415.19,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+89,Purchase,OUT,468.36,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+90,Bill Payment,OUT,45.0,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+91,Salary,IN,13827,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+92,ATM Withdrawal,OUT,151.34,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+93,Credit Card Payment,OUT,204.51,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+94,Favara Debit,OUT,257.68,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+95,Transfer Debit,OUT,310.85,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+96,Favara Debit,OUT,364.02,Fathimath Leeza,UNKNOWN,,DONT_REMEMBER,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+97,Favara Credit,IN,417.19,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+98,Favara Credit,IN,470.36,Mariyam Naaz,REFUND,,REFUND,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+99,Transfer Credit,IN,47.0,Ali Shaheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+100,Transfer Debit,OUT,100.17,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+101,Favara Debit,OUT,153.34,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+102,Favara Credit,IN,206.51,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+103,Purchase,OUT,259.68,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+104,Purchase,OUT,312.85,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+105,Purchase,OUT,366.02,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+106,Purchase,OUT,419.19,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+107,Bill Payment,OUT,472.36,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+108,Salary,IN,10476,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+109,ATM Withdrawal,OUT,102.17,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+110,Credit Card Payment,OUT,155.34,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+111,Favara Debit,OUT,208.51,Mariyam Naaz,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+112,Transfer Debit,OUT,261.68,Fathimath Leeza,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+113,Favara Debit,OUT,314.85,Ahmed Rasheed,UNKNOWN,,DONT_REMEMBER,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+114,Favara Credit,IN,368.02,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+115,Favara Credit,IN,421.19,Fathimath Leeza,REFUND,,REFUND,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+116,Transfer Credit,IN,474.36,Mariyam Naaz,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+117,Transfer Debit,OUT,51.0,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+118,Favara Debit,OUT,104.17,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+119,Favara Credit,IN,157.34,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+120,Purchase,OUT,210.51,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+121,Purchase,OUT,263.68,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+122,Purchase,OUT,316.85,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+123,Purchase,OUT,370.02,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+124,Bill Payment,OUT,423.19,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+125,Salary,IN,12125,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+126,ATM Withdrawal,OUT,53.0,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+127,Credit Card Payment,OUT,106.17,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+128,Favara Debit,OUT,159.34,Fathimath Leeza,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+129,Transfer Debit,OUT,212.51,Ahmed Rasheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+130,Favara Debit,OUT,265.68,Hussain Shafeeq,UNKNOWN,,DONT_REMEMBER,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+131,Favara Credit,IN,318.85,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+132,Favara Credit,IN,372.02,Ahmed Rasheed,REFUND,,REFUND,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+133,Transfer Credit,IN,425.19,Fathimath Leeza,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+134,Transfer Debit,OUT,478.36,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+135,Favara Debit,OUT,55.0,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+136,Favara Credit,IN,108.17,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+137,Purchase,OUT,161.34,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+138,Purchase,OUT,214.51,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+139,Purchase,OUT,267.68,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+140,Purchase,OUT,320.85,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+141,Bill Payment,OUT,374.02,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+142,Salary,IN,13774,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+143,ATM Withdrawal,OUT,480.36,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+144,Credit Card Payment,OUT,57.0,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+145,Favara Debit,OUT,110.17,Ahmed Rasheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+146,Transfer Debit,OUT,163.34,Hussain Shafeeq,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+147,Favara Debit,OUT,216.51,Ali Shaheed,UNKNOWN,,DONT_REMEMBER,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+148,Favara Credit,IN,269.68,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+149,Favara Credit,IN,322.85,Hussain Shafeeq,REFUND,,REFUND,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+150,Transfer Credit,IN,376.02,Ahmed Rasheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+151,Transfer Debit,OUT,429.19,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+152,Favara Debit,OUT,482.36,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+153,Favara Credit,IN,59.0,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+154,Purchase,OUT,112.17,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+155,Purchase,OUT,165.34,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+156,Purchase,OUT,218.51,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+157,Purchase,OUT,271.68,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+158,Bill Payment,OUT,324.85,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+159,Salary,IN,10423,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+160,ATM Withdrawal,OUT,431.19,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+161,Credit Card Payment,OUT,484.36,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+162,Favara Debit,OUT,61.0,Hussain Shafeeq,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+163,Transfer Debit,OUT,114.17,Ali Shaheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+164,Favara Debit,OUT,167.34,Mariyam Naaz,UNKNOWN,,DONT_REMEMBER,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+165,Favara Credit,IN,220.51,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+166,Favara Credit,IN,273.68,Ali Shaheed,REFUND,,REFUND,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+167,Transfer Credit,IN,326.85,Hussain Shafeeq,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+168,Transfer Debit,OUT,380.02,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+169,Favara Debit,OUT,433.19,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+170,Favara Credit,IN,486.36,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+171,Purchase,OUT,63.0,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+172,Purchase,OUT,116.17,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+173,Purchase,OUT,169.34,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+174,Purchase,OUT,222.51,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+175,Bill Payment,OUT,275.68,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+176,Salary,IN,12072,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+177,ATM Withdrawal,OUT,382.02,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+178,Credit Card Payment,OUT,435.19,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+179,Favara Debit,OUT,488.36,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+180,Transfer Debit,OUT,65.0,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+181,Favara Debit,OUT,118.17,Fathimath Leeza,UNKNOWN,,DONT_REMEMBER,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+182,Favara Credit,IN,171.34,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+183,Favara Credit,IN,224.51,Mariyam Naaz,REFUND,,REFUND,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+184,Transfer Credit,IN,277.68,Ali Shaheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+185,Transfer Debit,OUT,330.85,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+186,Favara Debit,OUT,384.02,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+187,Favara Credit,IN,437.19,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+188,Purchase,OUT,490.36,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+189,Purchase,OUT,67.0,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+190,Purchase,OUT,120.17,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+191,Purchase,OUT,173.34,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+192,Bill Payment,OUT,226.51,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+193,Salary,IN,13721,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+194,ATM Withdrawal,OUT,332.85,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+195,Credit Card Payment,OUT,386.02,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+196,Favara Debit,OUT,439.19,Mariyam Naaz,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+197,Transfer Debit,OUT,492.36,Fathimath Leeza,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+198,Favara Debit,OUT,69.0,Ahmed Rasheed,UNKNOWN,,DONT_REMEMBER,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+199,Favara Credit,IN,122.17,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+200,Favara Credit,IN,175.34,Fathimath Leeza,REFUND,,REFUND,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+201,Transfer Credit,IN,228.51,Mariyam Naaz,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+202,Transfer Debit,OUT,281.68,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+203,Favara Debit,OUT,334.85,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+204,Favara Credit,IN,388.02,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+205,Purchase,OUT,441.19,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+206,Purchase,OUT,494.36,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+207,Purchase,OUT,71.0,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+208,Purchase,OUT,124.17,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+209,Bill Payment,OUT,177.34,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+210,Salary,IN,10370,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+211,Favara Debit,OUT,300.85,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,False,MY OTHER BANK ACCOUNT,50,,Exact duplicate fingerprint intentionally repeated; should be skipped.
+212,Credit Card Payment,OUT,336.85,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+213,Favara Debit,OUT,390.02,Fathimath Leeza,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+214,Transfer Debit,OUT,443.19,Ahmed Rasheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+215,Favara Debit,OUT,496.36,Hussain Shafeeq,UNKNOWN,,DONT_REMEMBER,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+216,Favara Credit,IN,73.0,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+217,Favara Credit,IN,126.17,Ahmed Rasheed,REFUND,,REFUND,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+218,Transfer Credit,IN,179.34,Fathimath Leeza,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+219,Transfer Debit,OUT,232.51,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+220,Favara Debit,OUT,285.68,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+221,Favara Credit,IN,338.85,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+222,Purchase,OUT,392.02,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+223,Purchase,OUT,445.19,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+224,Purchase,OUT,498.36,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+225,Purchase,OUT,75.0,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+226,Bill Payment,OUT,128.17,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+227,Salary,IN,12019,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+228,ATM Withdrawal,OUT,234.51,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+229,Credit Card Payment,OUT,287.68,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+230,Favara Debit,OUT,340.85,Ahmed Rasheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+231,Transfer Debit,OUT,394.02,Hussain Shafeeq,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+232,Favara Debit,OUT,447.19,Ali Shaheed,UNKNOWN,,DONT_REMEMBER,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+233,Favara Credit,IN,500.36,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+234,Favara Credit,IN,77.0,Hussain Shafeeq,REFUND,,REFUND,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+235,Transfer Credit,IN,130.17,Ahmed Rasheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+236,Transfer Debit,OUT,183.34,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+237,Favara Debit,OUT,236.51,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+238,Favara Credit,IN,289.68,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+239,Purchase,OUT,342.85,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+240,Purchase,OUT,396.02,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+241,Purchase,OUT,449.19,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+242,Purchase,OUT,27.36,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+243,Bill Payment,OUT,79.0,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+244,Salary,IN,13668,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+245,ATM Withdrawal,OUT,185.34,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+246,Credit Card Payment,OUT,238.51,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+247,Favara Debit,OUT,291.68,Hussain Shafeeq,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+248,Transfer Debit,OUT,344.85,Ali Shaheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+249,Favara Debit,OUT,398.02,Mariyam Naaz,UNKNOWN,,DONT_REMEMBER,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+250,Favara Credit,IN,451.19,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+251,Favara Credit,IN,29.36,Ali Shaheed,REFUND,,REFUND,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+252,Transfer Credit,IN,81.0,Hussain Shafeeq,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+253,Transfer Debit,OUT,134.17,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+254,Favara Debit,OUT,187.34,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+255,Favara Credit,IN,240.51,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+256,Purchase,OUT,293.68,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+257,Purchase,OUT,346.85,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+258,Purchase,OUT,400.02,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+259,Purchase,OUT,453.19,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+260,Bill Payment,OUT,31.36,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+261,Salary,IN,10317,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+262,ATM Withdrawal,OUT,136.17,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+263,Credit Card Payment,OUT,189.34,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+264,Favara Debit,OUT,242.51,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+265,Transfer Debit,OUT,295.68,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+266,Favara Debit,OUT,348.85,Fathimath Leeza,UNKNOWN,,DONT_REMEMBER,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+267,Favara Credit,IN,402.02,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+268,Favara Credit,IN,455.19,Mariyam Naaz,REFUND,,REFUND,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+269,Transfer Credit,IN,33.36,Ali Shaheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+270,Transfer Debit,OUT,85.0,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+271,Favara Debit,OUT,138.17,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+272,Favara Credit,IN,191.34,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+273,Purchase,OUT,244.51,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+274,Purchase,OUT,297.68,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+275,Purchase,OUT,350.85,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+276,Purchase,OUT,404.02,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+277,Bill Payment,OUT,457.19,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+278,Salary,IN,11966,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+279,ATM Withdrawal,OUT,87.0,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+280,Credit Card Payment,OUT,140.17,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+281,Favara Debit,OUT,193.34,Mariyam Naaz,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+282,Transfer Debit,OUT,246.51,Fathimath Leeza,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+283,Favara Debit,OUT,299.68,Ahmed Rasheed,UNKNOWN,,DONT_REMEMBER,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+284,Favara Credit,IN,352.85,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+285,Favara Credit,IN,406.02,Fathimath Leeza,REFUND,,REFUND,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+286,Transfer Credit,IN,459.19,Mariyam Naaz,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+287,Transfer Debit,OUT,37.36,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+288,Favara Debit,OUT,89.0,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+289,Favara Credit,IN,142.17,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+290,Purchase,OUT,195.34,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+291,Purchase,OUT,248.51,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+292,Purchase,OUT,301.68,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+293,Purchase,OUT,354.85,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+294,Bill Payment,OUT,408.02,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+295,Salary,IN,13615,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+296,ATM Withdrawal,OUT,39.36,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+297,Credit Card Payment,OUT,91.0,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+298,Favara Debit,OUT,144.17,Fathimath Leeza,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+299,Transfer Debit,OUT,197.34,Ahmed Rasheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+300,Favara Debit,OUT,250.51,Hussain Shafeeq,UNKNOWN,,DONT_REMEMBER,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+301,Favara Credit,IN,303.68,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+302,Favara Credit,IN,356.85,Ahmed Rasheed,REFUND,,REFUND,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+303,Transfer Credit,IN,410.02,Fathimath Leeza,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+304,Transfer Debit,OUT,463.19,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+305,Favara Debit,OUT,41.36,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+306,Favara Credit,IN,93.0,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+307,Purchase,OUT,146.17,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+308,Purchase,OUT,199.34,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+309,Purchase,OUT,252.51,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+310,Purchase,OUT,305.68,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+311,Bill Payment,OUT,358.85,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+312,Salary,IN,10264,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+313,ATM Withdrawal,OUT,465.19,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+314,Credit Card Payment,OUT,43.36,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+315,Favara Debit,OUT,95.0,Ahmed Rasheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+316,Transfer Debit,OUT,148.17,Hussain Shafeeq,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+317,Favara Debit,OUT,201.34,Ali Shaheed,UNKNOWN,,DONT_REMEMBER,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+318,Favara Credit,IN,254.51,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+319,Favara Credit,IN,307.68,Hussain Shafeeq,REFUND,,REFUND,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+320,Transfer Credit,IN,360.85,Ahmed Rasheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+321,Transfer Debit,OUT,414.02,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+322,Favara Debit,OUT,467.19,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+323,Favara Credit,IN,45.36,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+324,Purchase,OUT,97.0,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+325,Purchase,OUT,150.17,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+326,Purchase,OUT,203.34,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+327,Purchase,OUT,256.51,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+328,Bill Payment,OUT,309.68,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+329,Salary,IN,11913,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+330,ATM Withdrawal,OUT,416.02,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+331,Credit Card Payment,OUT,469.19,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+332,Favara Debit,OUT,47.36,Hussain Shafeeq,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+333,Purchase Reversal,IN,65.0,Mariyam Naaz,REFUND,,AUTO_REFUND_OR_REVERSAL,False,False,MARIYAM NAAZ,,180,Matched synthetic reversal; must not create a new expense.
+334,Favara Debit,OUT,152.17,Mariyam Naaz,UNKNOWN,,DONT_REMEMBER,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+335,Favara Credit,IN,205.34,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+336,Favara Credit,IN,258.51,Ali Shaheed,REFUND,,REFUND,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+337,Transfer Credit,IN,311.68,Hussain Shafeeq,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+338,Transfer Debit,OUT,364.85,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+339,Favara Debit,OUT,418.02,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+340,Favara Credit,IN,471.19,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+341,Purchase,OUT,49.36,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+342,Purchase,OUT,101.0,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+343,Purchase,OUT,154.17,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+344,Purchase,OUT,207.34,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+345,Bill Payment,OUT,260.51,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+346,Salary,IN,13562,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+347,ATM Withdrawal,OUT,366.85,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+348,Credit Card Payment,OUT,420.02,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+349,Favara Debit,OUT,473.19,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+350,Transfer Debit,OUT,51.36,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+351,Favara Debit,OUT,103.0,Fathimath Leeza,UNKNOWN,,DONT_REMEMBER,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+352,Favara Credit,IN,156.17,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+353,Favara Credit,IN,209.34,Mariyam Naaz,REFUND,,REFUND,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+354,Transfer Credit,IN,262.51,Ali Shaheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+355,Transfer Debit,OUT,315.68,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+356,Favara Debit,OUT,368.85,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+357,Favara Credit,IN,422.02,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+358,Purchase,OUT,475.19,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+359,Purchase,OUT,53.36,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+360,Purchase,OUT,105.0,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+361,Purchase,OUT,158.17,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+362,Bill Payment,OUT,211.34,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+363,Salary,IN,10211,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+364,ATM Withdrawal,OUT,317.68,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+365,Credit Card Payment,OUT,370.85,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+366,Favara Debit,OUT,424.02,Mariyam Naaz,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+367,Transfer Debit,OUT,477.19,Fathimath Leeza,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+368,Favara Debit,OUT,55.36,Ahmed Rasheed,UNKNOWN,,DONT_REMEMBER,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+369,Favara Credit,IN,107.0,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+370,Favara Credit,IN,160.17,Fathimath Leeza,REFUND,,REFUND,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+371,Transfer Credit,IN,213.34,Mariyam Naaz,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+372,Transfer Debit,OUT,266.51,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+373,Favara Debit,OUT,319.68,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+374,Favara Credit,IN,372.85,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+375,Purchase,OUT,426.02,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+376,Purchase,OUT,479.19,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+377,Purchase,OUT,210.51,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,False,False,VILLA MART,120,,Exact duplicate fingerprint intentionally repeated; should be skipped.
+378,Purchase,OUT,109.0,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+379,Bill Payment,OUT,162.17,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+380,Salary,IN,11860,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+381,ATM Withdrawal,OUT,268.51,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+382,Credit Card Payment,OUT,321.68,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+383,Favara Debit,OUT,374.85,Fathimath Leeza,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+384,Transfer Debit,OUT,428.02,Ahmed Rasheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+385,Favara Debit,OUT,481.19,Hussain Shafeeq,UNKNOWN,,DONT_REMEMBER,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+386,Favara Credit,IN,59.36,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+387,Favara Credit,IN,111.0,Ahmed Rasheed,REFUND,,REFUND,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+388,Transfer Credit,IN,164.17,Fathimath Leeza,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+389,Transfer Debit,OUT,217.34,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+390,Favara Debit,OUT,270.51,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+391,Favara Credit,IN,323.68,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+392,Purchase,OUT,376.85,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+393,Purchase,OUT,430.02,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+394,Purchase,OUT,483.19,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+395,Purchase,OUT,61.36,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+396,Bill Payment,OUT,113.0,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+397,Salary,IN,13509,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+398,ATM Withdrawal,OUT,219.34,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+399,Credit Card Payment,OUT,272.51,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+400,Favara Debit,OUT,325.68,Ahmed Rasheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+401,Transfer Debit,OUT,378.85,Hussain Shafeeq,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+402,Favara Debit,OUT,432.02,Ali Shaheed,UNKNOWN,,DONT_REMEMBER,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+403,Favara Credit,IN,485.19,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+404,Favara Credit,IN,63.36,Hussain Shafeeq,REFUND,,REFUND,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+405,Transfer Credit,IN,115.0,Ahmed Rasheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+406,Transfer Debit,OUT,168.17,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+407,Favara Debit,OUT,221.34,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+408,Favara Credit,IN,274.51,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+409,Purchase,OUT,327.68,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+410,Purchase,OUT,380.85,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+411,Purchase,OUT,434.02,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+412,Purchase,OUT,487.19,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+413,Bill Payment,OUT,65.36,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+414,Salary,IN,10158,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+415,ATM Withdrawal,OUT,170.17,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+416,Credit Card Payment,OUT,223.34,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+417,Favara Debit,OUT,276.51,Hussain Shafeeq,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+418,Transfer Debit,OUT,329.68,Ali Shaheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+419,Favara Debit,OUT,382.85,Mariyam Naaz,UNKNOWN,,DONT_REMEMBER,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+420,Favara Credit,IN,436.02,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+421,Favara Credit,IN,489.19,Ali Shaheed,REFUND,,REFUND,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+422,Transfer Credit,IN,67.36,Hussain Shafeeq,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+423,Transfer Debit,OUT,119.0,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+424,Favara Debit,OUT,172.17,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+425,Favara Credit,IN,225.34,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+426,Purchase,OUT,278.51,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+427,Purchase,OUT,331.68,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+428,Purchase,OUT,384.85,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+429,Purchase,OUT,438.02,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+430,Bill Payment,OUT,491.19,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+431,Salary,IN,11807,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+432,ATM Withdrawal,OUT,121.0,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+433,Credit Card Payment,OUT,174.17,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+434,Favara Debit,OUT,227.34,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+435,Transfer Debit,OUT,280.51,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+436,Favara Debit,OUT,333.68,Fathimath Leeza,UNKNOWN,,DONT_REMEMBER,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+437,Favara Credit,IN,386.85,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+438,Favara Credit,IN,440.02,Mariyam Naaz,REFUND,,REFUND,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+439,Transfer Credit,IN,493.19,Ali Shaheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+440,Transfer Debit,OUT,71.36,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+441,Favara Debit,OUT,123.0,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+442,Favara Credit,IN,176.17,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+443,Purchase,OUT,229.34,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+444,Purchase,OUT,282.51,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+445,Purchase,OUT,335.68,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+446,Purchase,OUT,388.85,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+447,Bill Payment,OUT,442.02,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+448,Salary,IN,13456,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+449,ATM Withdrawal,OUT,73.36,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+450,Credit Card Payment,OUT,125.0,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+451,Favara Debit,OUT,178.17,Mariyam Naaz,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+452,Transfer Debit,OUT,231.34,Fathimath Leeza,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+453,Favara Debit,OUT,284.51,Ahmed Rasheed,UNKNOWN,,DONT_REMEMBER,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+454,Favara Credit,IN,337.68,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+455,Favara Credit,IN,390.85,Fathimath Leeza,REFUND,,REFUND,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+456,Transfer Credit,IN,444.02,Mariyam Naaz,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+457,Transfer Debit,OUT,497.19,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+458,Favara Debit,OUT,75.36,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+459,Favara Credit,IN,127.0,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+460,Purchase,OUT,180.17,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+461,Purchase,OUT,233.34,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+462,Purchase,OUT,286.51,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+463,Purchase,OUT,339.68,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+464,Bill Payment,OUT,392.85,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+465,Salary,IN,10105,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+466,ATM Withdrawal,OUT,499.19,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+467,Credit Card Payment,OUT,77.36,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+468,Favara Debit,OUT,129.0,Fathimath Leeza,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+469,Transfer Debit,OUT,182.17,Ahmed Rasheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+470,Favara Debit,OUT,235.34,Hussain Shafeeq,UNKNOWN,,DONT_REMEMBER,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+471,Favara Credit,IN,288.51,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+472,Favara Credit,IN,341.68,Ahmed Rasheed,REFUND,,REFUND,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+473,Transfer Credit,IN,394.85,Fathimath Leeza,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+474,Transfer Debit,OUT,448.02,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+475,Favara Debit,OUT,26.19,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+476,Favara Credit,IN,79.36,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+477,Purchase,OUT,131.0,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+478,Purchase,OUT,184.17,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+479,Purchase,OUT,237.34,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+480,Purchase,OUT,290.51,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+481,Bill Payment,OUT,343.68,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+482,Salary,IN,11754,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+483,ATM Withdrawal,OUT,450.02,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+484,Credit Card Payment,OUT,28.19,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+485,Favara Debit,OUT,81.36,Ahmed Rasheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+486,Transfer Debit,OUT,133.0,Hussain Shafeeq,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+487,Favara Debit,OUT,186.17,Ali Shaheed,UNKNOWN,,DONT_REMEMBER,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+488,Favara Credit,IN,239.34,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+489,Favara Credit,IN,292.51,Hussain Shafeeq,REFUND,,REFUND,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+490,Transfer Credit,IN,345.68,Ahmed Rasheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+491,Transfer Debit,OUT,398.85,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+492,Favara Debit,OUT,452.02,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+493,Favara Credit,IN,30.19,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+494,Purchase,OUT,83.36,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+495,Purchase,OUT,135.0,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+496,Purchase,OUT,188.17,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+497,Purchase,OUT,241.34,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+498,Bill Payment,OUT,294.51,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+499,Salary,IN,13403,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+500,ATM Withdrawal,OUT,400.85,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+501,Credit Card Payment,OUT,454.02,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+502,Favara Debit,OUT,32.19,Hussain Shafeeq,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+503,Transfer Debit,OUT,85.36,Ali Shaheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+504,Favara Debit,OUT,137.0,Mariyam Naaz,UNKNOWN,,DONT_REMEMBER,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+505,Favara Credit,IN,190.17,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+506,Favara Credit,IN,243.34,Ali Shaheed,REFUND,,REFUND,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+507,Transfer Credit,IN,296.51,Hussain Shafeeq,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+508,Transfer Debit,OUT,349.68,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+509,Favara Debit,OUT,402.85,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+510,Favara Credit,IN,456.02,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+511,Purchase,OUT,34.19,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+512,Purchase,OUT,87.36,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+513,Purchase,OUT,139.0,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+514,Purchase,OUT,192.17,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+515,Bill Payment,OUT,245.34,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+516,Salary,IN,10052,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+517,ATM Withdrawal,OUT,351.68,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+518,Credit Card Payment,OUT,404.85,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+519,Favara Debit,OUT,458.02,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+520,Transfer Debit,OUT,36.19,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+521,Favara Debit,OUT,89.36,Fathimath Leeza,UNKNOWN,,DONT_REMEMBER,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+522,Favara Credit,IN,141.0,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+523,Favara Credit,IN,194.17,Mariyam Naaz,REFUND,,REFUND,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+524,Transfer Credit,IN,247.34,Ali Shaheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+525,Transfer Debit,OUT,300.51,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+526,Favara Debit,OUT,353.68,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+527,Favara Credit,IN,406.85,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+528,Purchase,OUT,460.02,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+529,Purchase,OUT,38.19,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+530,Purchase,OUT,91.36,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+531,Purchase,OUT,143.0,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+532,Bill Payment,OUT,196.17,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+533,Salary,IN,11701,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+534,ATM Withdrawal,OUT,302.51,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+535,Credit Card Payment,OUT,355.68,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+536,Favara Debit,OUT,408.85,Mariyam Naaz,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+537,Transfer Debit,OUT,462.02,Fathimath Leeza,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+538,Favara Debit,OUT,40.19,Ahmed Rasheed,UNKNOWN,,DONT_REMEMBER,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+539,Favara Credit,IN,93.36,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+540,Favara Credit,IN,145.0,Fathimath Leeza,REFUND,,REFUND,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+541,Transfer Credit,IN,198.17,Mariyam Naaz,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+542,Transfer Debit,OUT,251.34,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+543,Favara Debit,OUT,304.51,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+544,Favara Credit,IN,357.68,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+545,Purchase,OUT,410.85,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+546,Purchase,OUT,464.02,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+547,Purchase,OUT,42.19,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+548,Purchase,OUT,95.36,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+549,Bill Payment,OUT,147.0,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+550,Salary,IN,13350,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+551,ATM Withdrawal,OUT,253.34,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+552,Credit Card Payment,OUT,306.51,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+553,Favara Debit,OUT,359.68,Fathimath Leeza,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+554,Transfer Debit,OUT,412.85,Ahmed Rasheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+555,Favara Debit,OUT,466.02,Hussain Shafeeq,UNKNOWN,,DONT_REMEMBER,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+556,Favara Credit,IN,44.19,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+557,Favara Credit,IN,97.36,Ahmed Rasheed,REFUND,,REFUND,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+558,Transfer Credit,IN,149.0,Fathimath Leeza,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+559,Transfer Debit,OUT,202.17,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+560,Favara Debit,OUT,255.34,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+561,Favara Credit,IN,308.51,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+562,Purchase,OUT,361.68,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+563,Purchase,OUT,414.85,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+564,Purchase,OUT,468.02,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+565,Purchase,OUT,46.19,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+566,Bill Payment,OUT,99.36,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+567,Salary,IN,14999,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+568,ATM Withdrawal,OUT,204.17,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+569,Credit Card Payment,OUT,257.34,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+570,Favara Debit,OUT,310.51,Ahmed Rasheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+571,Transfer Debit,OUT,363.68,Hussain Shafeeq,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+572,Favara Debit,OUT,416.85,Ali Shaheed,UNKNOWN,,DONT_REMEMBER,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+573,Favara Credit,IN,470.02,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+574,Favara Credit,IN,48.19,Hussain Shafeeq,REFUND,,REFUND,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+575,Transfer Credit,IN,101.36,Ahmed Rasheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+576,Transfer Debit,OUT,153.0,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+577,Favara Debit,OUT,206.17,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+578,Favara Credit,IN,259.34,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+579,Purchase,OUT,312.51,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+580,Purchase,OUT,365.68,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+581,Purchase,OUT,418.85,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+582,Purchase,OUT,472.02,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+583,Bill Payment,OUT,50.19,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+584,Salary,IN,11648,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+585,ATM Withdrawal,OUT,155.0,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+586,Credit Card Payment,OUT,208.17,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+587,Favara Debit,OUT,261.34,Hussain Shafeeq,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+588,Transfer Debit,OUT,314.51,Ali Shaheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+589,Favara Debit,OUT,367.68,Mariyam Naaz,UNKNOWN,,DONT_REMEMBER,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+590,Favara Credit,IN,420.85,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+591,Favara Credit,IN,474.02,Ali Shaheed,REFUND,,REFUND,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+592,Transfer Credit,IN,52.19,Hussain Shafeeq,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+593,Transfer Debit,OUT,105.36,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+594,Favara Debit,OUT,157.0,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+595,Favara Credit,IN,210.17,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+596,Purchase,OUT,263.34,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+597,Purchase,OUT,316.51,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+598,Purchase,OUT,369.68,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+599,Purchase,OUT,422.85,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+600,Bill Payment,OUT,476.02,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+601,Salary,IN,13297,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+602,ATM Withdrawal,OUT,107.36,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+603,Credit Card Payment,OUT,159.0,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+604,Favara Debit,OUT,212.17,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+605,Transfer Debit,OUT,265.34,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+606,Favara Debit,OUT,318.51,Fathimath Leeza,UNKNOWN,,DONT_REMEMBER,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+607,Favara Credit,IN,371.68,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+608,Favara Credit,IN,424.85,Mariyam Naaz,REFUND,,REFUND,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+609,Transfer Credit,IN,478.02,Ali Shaheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+610,Transfer Debit,OUT,56.19,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+611,Favara Debit,OUT,109.36,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+612,Favara Credit,IN,161.0,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+613,Purchase,OUT,214.17,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+614,Purchase,OUT,267.34,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+615,Purchase,OUT,320.51,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+616,Purchase,OUT,373.68,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+617,Bill Payment,OUT,426.85,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+618,Salary,IN,14946,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+619,ATM Withdrawal,OUT,58.19,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+620,Credit Card Payment,OUT,111.36,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+621,Favara Debit,OUT,163.0,Mariyam Naaz,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+622,Transfer Debit,OUT,216.17,Fathimath Leeza,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+623,Favara Debit,OUT,269.34,Ahmed Rasheed,UNKNOWN,,DONT_REMEMBER,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+624,Favara Credit,IN,322.51,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+625,Favara Credit,IN,375.68,Fathimath Leeza,REFUND,,REFUND,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+626,Transfer Credit,IN,428.85,Mariyam Naaz,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+627,Transfer Debit,OUT,482.02,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+628,Favara Debit,OUT,60.19,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+629,Favara Credit,IN,113.36,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+630,Purchase,OUT,165.0,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+631,Purchase,OUT,218.17,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+632,Purchase,OUT,271.34,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+633,Purchase,OUT,324.51,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+634,Bill Payment,OUT,377.68,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+635,Salary,IN,11595,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+636,ATM Withdrawal,OUT,484.02,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+637,Credit Card Payment,OUT,62.19,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+638,Favara Debit,OUT,115.36,Fathimath Leeza,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+639,Transfer Debit,OUT,167.0,Ahmed Rasheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+640,Favara Debit,OUT,220.17,Hussain Shafeeq,UNKNOWN,,DONT_REMEMBER,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+641,Favara Credit,IN,273.34,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+642,Favara Credit,IN,326.51,Ahmed Rasheed,REFUND,,REFUND,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+643,Transfer Credit,IN,379.68,Fathimath Leeza,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+644,Transfer Debit,OUT,432.85,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+645,Favara Debit,OUT,486.02,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+646,Favara Credit,IN,64.19,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+647,Purchase,OUT,117.36,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+648,Purchase,OUT,169.0,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+649,Purchase,OUT,222.17,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+650,Purchase,OUT,275.34,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+651,Bill Payment,OUT,328.51,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+652,Salary,IN,13244,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+653,ATM Withdrawal,OUT,434.85,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+654,Credit Card Payment,OUT,488.02,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+655,Favara Debit,OUT,66.19,Ahmed Rasheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+656,Transfer Debit,OUT,119.36,Hussain Shafeeq,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+657,Favara Debit,OUT,171.0,Ali Shaheed,UNKNOWN,,DONT_REMEMBER,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+658,Favara Credit,IN,224.17,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+659,Favara Credit,IN,277.34,Hussain Shafeeq,REFUND,,REFUND,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+660,Transfer Credit,IN,330.51,Ahmed Rasheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+661,Transfer Debit,OUT,383.68,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+662,Favara Debit,OUT,436.85,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+663,Favara Credit,IN,490.02,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+664,Purchase,OUT,68.19,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+665,Purchase,OUT,121.36,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+666,Purchase,OUT,173.0,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+667,Purchase,OUT,226.17,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+668,Bill Payment,OUT,279.34,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+669,Salary,IN,14893,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+670,ATM Withdrawal,OUT,385.68,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+671,Credit Card Payment,OUT,438.85,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+672,Favara Debit,OUT,492.02,Hussain Shafeeq,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+673,Transfer Debit,OUT,70.19,Ali Shaheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+674,Favara Debit,OUT,123.36,Mariyam Naaz,UNKNOWN,,DONT_REMEMBER,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+675,Favara Credit,IN,175.0,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+676,Favara Credit,IN,228.17,Ali Shaheed,REFUND,,REFUND,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+677,Transfer Credit,IN,281.34,Hussain Shafeeq,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+678,Transfer Debit,OUT,334.51,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+679,Favara Debit,OUT,387.68,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+680,Favara Credit,IN,440.85,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+681,Purchase,OUT,494.02,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+682,Purchase,OUT,72.19,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+683,Purchase,OUT,125.36,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+684,Purchase,OUT,177.0,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+685,Bill Payment,OUT,230.17,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+686,Salary,IN,11542,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+687,ATM Withdrawal,OUT,336.51,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+688,Credit Card Payment,OUT,389.68,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+689,Favara Debit,OUT,442.85,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+690,Transfer Debit,OUT,496.02,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+691,Favara Debit,OUT,74.19,Fathimath Leeza,UNKNOWN,,DONT_REMEMBER,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+692,Favara Credit,IN,127.36,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+693,Favara Credit,IN,179.0,Mariyam Naaz,REFUND,,REFUND,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+694,Transfer Credit,IN,232.17,Ali Shaheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+695,Transfer Debit,OUT,285.34,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+696,Favara Debit,OUT,338.51,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+697,Favara Credit,IN,391.68,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+698,Purchase,OUT,444.85,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+699,Purchase,OUT,498.02,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+700,Purchase,OUT,76.19,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+701,Purchase,OUT,129.36,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+702,Bill Payment,OUT,181.0,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+703,Salary,IN,13191,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+704,ATM Withdrawal,OUT,287.34,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+705,Credit Card Payment,OUT,340.51,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+706,Favara Debit,OUT,393.68,Mariyam Naaz,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+707,Transfer Debit,OUT,446.85,Fathimath Leeza,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+708,Favara Debit,OUT,500.02,Ahmed Rasheed,UNKNOWN,,DONT_REMEMBER,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+709,Favara Credit,IN,78.19,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+710,Favara Credit,IN,131.36,Fathimath Leeza,REFUND,,REFUND,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+711,Transfer Credit,IN,183.0,Mariyam Naaz,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+712,Transfer Debit,OUT,236.17,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+713,Favara Debit,OUT,289.34,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+714,Favara Credit,IN,342.51,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+715,Purchase,OUT,395.68,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+716,Purchase,OUT,448.85,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+717,Purchase,OUT,27.02,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+718,Purchase,OUT,80.19,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+719,Bill Payment,OUT,133.36,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+720,Salary,IN,14840,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+721,ATM Withdrawal,OUT,238.17,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+722,Credit Card Payment,OUT,291.34,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+723,Favara Debit,OUT,344.51,Fathimath Leeza,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+724,Transfer Debit,OUT,397.68,Ahmed Rasheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+725,Favara Debit,OUT,450.85,Hussain Shafeeq,UNKNOWN,,DONT_REMEMBER,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+726,Favara Credit,IN,29.02,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+727,Favara Credit,IN,82.19,Ahmed Rasheed,REFUND,,REFUND,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+728,Transfer Credit,IN,135.36,Fathimath Leeza,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+729,Transfer Debit,OUT,187.0,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+730,Favara Debit,OUT,240.17,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+731,Favara Credit,IN,293.34,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+732,Purchase,OUT,346.51,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+733,Purchase,OUT,399.68,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+734,Purchase,OUT,452.85,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+735,Purchase,OUT,31.02,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+736,Bill Payment,OUT,84.19,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+737,Salary,IN,11489,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+738,ATM Withdrawal,OUT,189.0,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+739,Credit Card Payment,OUT,242.17,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+740,Favara Debit,OUT,295.34,Ahmed Rasheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+741,Transfer Debit,OUT,348.51,Hussain Shafeeq,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+742,Favara Debit,OUT,401.68,Ali Shaheed,UNKNOWN,,DONT_REMEMBER,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+743,Favara Credit,IN,454.85,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+744,Favara Credit,IN,33.02,Hussain Shafeeq,REFUND,,REFUND,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+745,Transfer Credit,IN,86.19,Ahmed Rasheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+746,Transfer Debit,OUT,139.36,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+747,Favara Debit,OUT,191.0,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+748,Favara Credit,IN,244.17,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+749,Purchase,OUT,297.34,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+750,Purchase,OUT,350.51,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+751,Purchase,OUT,403.68,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+752,Purchase,OUT,456.85,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+753,Bill Payment,OUT,35.02,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+754,Salary,IN,13138,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+755,ATM Withdrawal,OUT,141.36,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+756,Credit Card Payment,OUT,193.0,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+757,Favara Debit,OUT,246.17,Hussain Shafeeq,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+758,Transfer Debit,OUT,299.34,Ali Shaheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+759,Favara Debit,OUT,352.51,Mariyam Naaz,UNKNOWN,,DONT_REMEMBER,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+760,Favara Credit,IN,405.68,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+761,Favara Credit,IN,458.85,Ali Shaheed,REFUND,,REFUND,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+762,Transfer Credit,IN,37.02,Hussain Shafeeq,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+763,Transfer Debit,OUT,90.19,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+764,Favara Debit,OUT,143.36,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+765,Favara Credit,IN,195.0,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+766,Purchase,OUT,248.17,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+767,Purchase,OUT,301.34,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+768,Purchase,OUT,354.51,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+769,Purchase,OUT,407.68,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+770,Bill Payment,OUT,460.85,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+771,Salary,IN,14787,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+772,ATM Withdrawal,OUT,92.19,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+773,Credit Card Payment,OUT,145.36,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+774,Favara Debit,OUT,197.0,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+775,Transfer Debit,OUT,250.17,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+776,Favara Debit,OUT,303.34,Fathimath Leeza,UNKNOWN,,DONT_REMEMBER,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+777,Favara Credit,IN,356.51,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+778,Favara Credit,IN,409.68,Mariyam Naaz,REFUND,,REFUND,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+779,Transfer Credit,IN,462.85,Ali Shaheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+780,Transfer Debit,OUT,41.02,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+781,Favara Debit,OUT,94.19,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+782,Favara Credit,IN,147.36,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+783,Purchase,OUT,199.0,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+784,Purchase,OUT,252.17,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+785,Purchase,OUT,305.34,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+786,Purchase,OUT,358.51,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+787,Bill Payment,OUT,411.68,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+788,Salary,IN,11436,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+789,ATM Withdrawal,OUT,43.02,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+790,Credit Card Payment,OUT,96.19,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+791,Favara Debit,OUT,149.36,Mariyam Naaz,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+792,Transfer Debit,OUT,201.0,Fathimath Leeza,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+793,Favara Debit,OUT,254.17,Ahmed Rasheed,UNKNOWN,,DONT_REMEMBER,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+794,Favara Credit,IN,307.34,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+795,Favara Credit,IN,360.51,Fathimath Leeza,REFUND,,REFUND,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+796,Transfer Credit,IN,413.68,Mariyam Naaz,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+797,Transfer Debit,OUT,466.85,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+798,Favara Debit,OUT,45.02,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+799,Favara Credit,IN,98.19,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+800,Purchase,OUT,151.36,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+801,Purchase,OUT,203.0,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+802,Purchase,OUT,256.17,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+803,Purchase,OUT,309.34,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+804,Bill Payment,OUT,362.51,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+805,Salary,IN,13085,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+806,ATM Withdrawal,OUT,468.85,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+807,Credit Card Payment,OUT,47.02,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+808,Favara Debit,OUT,100.19,Fathimath Leeza,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+809,Transfer Debit,OUT,153.36,Ahmed Rasheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+810,Favara Debit,OUT,205.0,Hussain Shafeeq,UNKNOWN,,DONT_REMEMBER,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+811,Favara Credit,IN,258.17,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+812,Favara Credit,IN,311.34,Ahmed Rasheed,REFUND,,REFUND,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+813,Transfer Credit,IN,364.51,Fathimath Leeza,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+814,Transfer Debit,OUT,417.68,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+815,Favara Debit,OUT,470.85,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+816,Favara Credit,IN,49.02,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+817,Purchase,OUT,102.19,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+818,Purchase,OUT,155.36,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+819,Purchase,OUT,207.0,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+820,Purchase,OUT,260.17,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+821,Bill Payment,OUT,313.34,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+822,Salary,IN,14734,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+823,ATM Withdrawal,OUT,419.68,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+824,Credit Card Payment,OUT,472.85,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+825,Favara Debit,OUT,51.02,Ahmed Rasheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+826,Transfer Debit,OUT,104.19,Hussain Shafeeq,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+827,Favara Debit,OUT,157.36,Ali Shaheed,UNKNOWN,,DONT_REMEMBER,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+828,Favara Credit,IN,209.0,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+829,Favara Credit,IN,262.17,Hussain Shafeeq,REFUND,,REFUND,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+830,Transfer Credit,IN,315.34,Ahmed Rasheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+831,Transfer Debit,OUT,368.51,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+832,Favara Debit,OUT,421.68,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+833,Favara Credit,IN,474.85,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+834,Purchase,OUT,53.02,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+835,Purchase,OUT,106.19,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+836,Purchase,OUT,159.36,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+837,Purchase,OUT,211.0,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+838,Bill Payment,OUT,264.17,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+839,Salary,IN,11383,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+840,ATM Withdrawal,OUT,370.51,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+841,Credit Card Payment,OUT,423.68,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+842,Favara Debit,OUT,476.85,Hussain Shafeeq,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+843,Transfer Debit,OUT,55.02,Ali Shaheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+844,Favara Debit,OUT,108.19,Mariyam Naaz,UNKNOWN,,DONT_REMEMBER,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+845,Favara Credit,IN,161.36,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+846,Favara Credit,IN,213.0,Ali Shaheed,REFUND,,REFUND,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+847,Transfer Credit,IN,266.17,Hussain Shafeeq,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+848,Transfer Debit,OUT,319.34,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+849,Favara Debit,OUT,372.51,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+850,Favara Credit,IN,425.68,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+851,Purchase,OUT,478.85,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+852,Purchase,OUT,57.02,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+853,Purchase,OUT,110.19,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+854,Purchase,OUT,163.36,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+855,Bill Payment,OUT,215.0,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+856,Salary,IN,13032,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+857,ATM Withdrawal,OUT,321.34,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+858,Credit Card Payment,OUT,374.51,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+859,Favara Debit,OUT,427.68,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+860,Transfer Debit,OUT,480.85,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+861,Favara Debit,OUT,59.02,Fathimath Leeza,UNKNOWN,,DONT_REMEMBER,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+862,Favara Credit,IN,112.19,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+863,Favara Credit,IN,165.36,Mariyam Naaz,REFUND,,REFUND,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+864,Transfer Credit,IN,217.0,Ali Shaheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+865,Transfer Debit,OUT,270.17,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+866,Favara Debit,OUT,323.34,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+867,Favara Credit,IN,376.51,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+868,Purchase,OUT,429.68,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+869,Purchase,OUT,482.85,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+870,Purchase,OUT,61.02,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+871,Purchase,OUT,114.19,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+872,Bill Payment,OUT,167.36,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+873,Salary,IN,14681,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+874,ATM Withdrawal,OUT,272.17,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+875,Credit Card Payment,OUT,325.34,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+876,Favara Debit,OUT,378.51,Mariyam Naaz,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+877,Transfer Debit,OUT,431.68,Fathimath Leeza,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+878,Favara Debit,OUT,484.85,Ahmed Rasheed,UNKNOWN,,DONT_REMEMBER,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+879,Favara Credit,IN,63.02,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+880,Favara Credit,IN,116.19,Fathimath Leeza,REFUND,,REFUND,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+881,Transfer Credit,IN,169.36,Mariyam Naaz,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+882,Transfer Debit,OUT,221.0,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+883,Favara Debit,OUT,274.17,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+884,Favara Credit,IN,327.34,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+885,Purchase,OUT,380.51,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+886,Purchase,OUT,433.68,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+887,Purchase,OUT,486.85,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+888,Purchase,OUT,65.02,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+889,Bill Payment,OUT,118.19,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+890,Salary,IN,11330,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+891,ATM Withdrawal,OUT,223.0,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+892,Credit Card Payment,OUT,276.17,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+893,Favara Debit,OUT,329.34,Fathimath Leeza,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+894,Transfer Debit,OUT,382.51,Ahmed Rasheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+895,Favara Debit,OUT,435.68,Hussain Shafeeq,UNKNOWN,,DONT_REMEMBER,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+896,Favara Credit,IN,488.85,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+897,Favara Credit,IN,67.02,Ahmed Rasheed,REFUND,,REFUND,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+898,Transfer Credit,IN,120.19,Fathimath Leeza,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+899,Transfer Debit,OUT,173.36,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+900,Favara Debit,OUT,225.0,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+901,Purchase Reversal,IN,220.17,Hussain Shafeeq,REFUND,,AUTO_REFUND_OR_REVERSAL,False,False,HUSSAIN SHAFEEQ,,640,Matched synthetic reversal; must not create a new expense.
+902,Purchase,OUT,331.34,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+903,Purchase,OUT,384.51,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+904,Purchase,OUT,437.68,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+905,Purchase,OUT,490.85,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+906,Bill Payment,OUT,69.02,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+907,Salary,IN,12979,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+908,ATM Withdrawal,OUT,175.36,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+909,Credit Card Payment,OUT,227.0,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+910,Favara Debit,OUT,280.17,Ahmed Rasheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+911,Transfer Debit,OUT,333.34,Hussain Shafeeq,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+912,Favara Debit,OUT,386.51,Ali Shaheed,UNKNOWN,,DONT_REMEMBER,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+913,Favara Credit,IN,439.68,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+914,Favara Credit,IN,492.85,Hussain Shafeeq,REFUND,,REFUND,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+915,Transfer Credit,IN,71.02,Ahmed Rasheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+916,Transfer Debit,OUT,124.19,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+917,Favara Debit,OUT,177.36,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+918,Favara Credit,IN,229.0,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+919,Purchase,OUT,282.17,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+920,Purchase,OUT,335.34,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+921,Purchase,OUT,388.51,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+922,Purchase,OUT,441.68,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+923,Bill Payment,OUT,494.85,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+924,Salary,IN,14628,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+925,ATM Withdrawal,OUT,126.19,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+926,Credit Card Payment,OUT,179.36,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+927,Favara Debit,OUT,231.0,Hussain Shafeeq,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+928,Transfer Debit,OUT,284.17,Ali Shaheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+929,Favara Debit,OUT,337.34,Mariyam Naaz,UNKNOWN,,DONT_REMEMBER,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+930,Favara Credit,IN,390.51,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+931,Favara Credit,IN,443.68,Ali Shaheed,REFUND,,REFUND,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+932,Transfer Credit,IN,496.85,Hussain Shafeeq,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+933,Transfer Debit,OUT,75.02,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+934,Favara Debit,OUT,128.19,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+935,Favara Credit,IN,181.36,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+936,Purchase,OUT,233.0,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+937,Purchase,OUT,286.17,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+938,Purchase,OUT,339.34,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+939,Purchase,OUT,392.51,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+940,Bill Payment,OUT,445.68,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+941,Salary,IN,11277,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+942,ATM Withdrawal,OUT,77.02,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+943,Credit Card Payment,OUT,130.19,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+944,Favara Debit,OUT,183.36,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+945,Transfer Debit,OUT,235.0,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+946,Favara Debit,OUT,288.17,Fathimath Leeza,UNKNOWN,,DONT_REMEMBER,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+947,Favara Credit,IN,341.34,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+948,Favara Credit,IN,394.51,Mariyam Naaz,REFUND,,REFUND,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+949,Transfer Credit,IN,447.68,Ali Shaheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+950,Transfer Debit,OUT,25.85,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+951,Favara Debit,OUT,79.02,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+952,Favara Credit,IN,132.19,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+953,Purchase,OUT,185.36,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+954,Purchase,OUT,237.0,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+955,Purchase,OUT,290.17,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+956,Purchase,OUT,343.34,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+957,Bill Payment,OUT,396.51,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+958,Salary,IN,12926,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+959,ATM Withdrawal,OUT,27.85,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+960,Credit Card Payment,OUT,81.02,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+961,Favara Debit,OUT,134.19,Mariyam Naaz,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+962,Transfer Debit,OUT,187.36,Fathimath Leeza,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+963,Favara Debit,OUT,239.0,Ahmed Rasheed,UNKNOWN,,DONT_REMEMBER,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+964,Favara Credit,IN,292.17,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+965,Favara Credit,IN,345.34,Fathimath Leeza,REFUND,,REFUND,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+966,Transfer Credit,IN,398.51,Mariyam Naaz,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+967,Transfer Debit,OUT,451.68,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+968,Favara Debit,OUT,29.85,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+969,Favara Credit,IN,83.02,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+970,Purchase,OUT,136.19,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+971,Purchase,OUT,189.36,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+972,Purchase,OUT,241.0,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+973,Purchase,OUT,294.17,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+974,Bill Payment,OUT,347.34,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+975,Salary,IN,14575,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+976,ATM Withdrawal,OUT,453.68,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+977,Credit Card Payment,OUT,31.85,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+978,Favara Debit,OUT,85.02,Fathimath Leeza,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+979,Transfer Debit,OUT,138.19,Ahmed Rasheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+980,Favara Debit,OUT,191.36,Hussain Shafeeq,UNKNOWN,,DONT_REMEMBER,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+981,Favara Credit,IN,243.0,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+982,Favara Credit,IN,296.17,Ahmed Rasheed,REFUND,,REFUND,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+983,Transfer Credit,IN,349.34,Fathimath Leeza,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+984,Transfer Debit,OUT,402.51,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+985,Favara Debit,OUT,455.68,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+986,Favara Credit,IN,33.85,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+987,Purchase,OUT,87.02,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+988,Purchase,OUT,140.19,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+989,Purchase,OUT,193.36,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+990,Purchase,OUT,245.0,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+991,Bill Payment,OUT,298.17,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+992,Salary,IN,11224,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+993,ATM Withdrawal,OUT,404.51,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+994,Credit Card Payment,OUT,457.68,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+995,Favara Debit,OUT,35.85,Ahmed Rasheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+996,Transfer Debit,OUT,89.02,Hussain Shafeeq,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+997,Favara Debit,OUT,142.19,Ali Shaheed,UNKNOWN,,DONT_REMEMBER,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+998,Favara Credit,IN,195.36,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+999,Favara Credit,IN,247.0,Hussain Shafeeq,REFUND,,REFUND,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+1000,Transfer Credit,IN,300.17,Ahmed Rasheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+1001,Transfer Debit,OUT,353.34,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+1002,Favara Debit,OUT,406.51,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1003,Favara Credit,IN,459.68,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1004,Purchase,OUT,37.85,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+1005,Purchase,OUT,91.02,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+1006,Purchase,OUT,144.19,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+1007,Purchase,OUT,197.36,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+1008,Bill Payment,OUT,249.0,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+1009,Salary,IN,12873,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+1010,ATM Withdrawal,OUT,355.34,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+1011,Credit Card Payment,OUT,408.51,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+1012,Favara Debit,OUT,461.68,Hussain Shafeeq,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+1013,Transfer Debit,OUT,39.85,Ali Shaheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+1014,Favara Debit,OUT,93.02,Mariyam Naaz,UNKNOWN,,DONT_REMEMBER,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+1015,Favara Credit,IN,146.19,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+1016,Favara Credit,IN,199.36,Ali Shaheed,REFUND,,REFUND,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+1017,Transfer Credit,IN,251.0,Hussain Shafeeq,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+1018,Transfer Debit,OUT,304.17,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+1019,Favara Debit,OUT,357.34,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1020,Favara Credit,IN,410.51,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1021,Purchase,OUT,463.68,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+1022,Purchase,OUT,41.85,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+1023,Purchase,OUT,95.02,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+1024,Purchase,OUT,148.19,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+1025,Bill Payment,OUT,201.36,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+1026,Salary,IN,14522,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+1027,ATM Withdrawal,OUT,306.17,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+1028,Credit Card Payment,OUT,359.34,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+1029,Favara Debit,OUT,412.51,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+1030,Transfer Debit,OUT,465.68,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+1031,Favara Debit,OUT,43.85,Fathimath Leeza,UNKNOWN,,DONT_REMEMBER,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+1032,Favara Credit,IN,97.02,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+1033,Favara Credit,IN,150.19,Mariyam Naaz,REFUND,,REFUND,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+1034,Transfer Credit,IN,203.36,Ali Shaheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+1035,Transfer Debit,OUT,255.0,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+1036,Favara Debit,OUT,308.17,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1037,Favara Credit,IN,361.34,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1038,Purchase,OUT,414.51,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+1039,Purchase,OUT,467.68,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+1040,Purchase,OUT,45.85,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+1041,Purchase,OUT,99.02,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+1042,Bill Payment,OUT,152.19,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+1043,Salary,IN,11171,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+1044,ATM Withdrawal,OUT,257.0,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+1045,Credit Card Payment,OUT,310.17,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+1046,Favara Debit,OUT,363.34,Mariyam Naaz,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+1047,Transfer Debit,OUT,416.51,Fathimath Leeza,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+1048,Favara Debit,OUT,469.68,Ahmed Rasheed,UNKNOWN,,DONT_REMEMBER,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+1049,Favara Credit,IN,47.85,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+1050,Favara Credit,IN,101.02,Fathimath Leeza,REFUND,,REFUND,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+1051,Transfer Credit,IN,154.19,Mariyam Naaz,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+1052,Transfer Debit,OUT,207.36,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+1053,Favara Debit,OUT,259.0,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1054,Favara Credit,IN,312.17,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1055,Purchase,OUT,365.34,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+1056,Purchase,OUT,418.51,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+1057,Purchase,OUT,471.68,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+1058,Purchase,OUT,49.85,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+1059,Bill Payment,OUT,103.02,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+1060,Salary,IN,12820,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+1061,ATM Withdrawal,OUT,209.36,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+1062,Credit Card Payment,OUT,261.0,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+1063,Favara Debit,OUT,314.17,Fathimath Leeza,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+1064,Transfer Debit,OUT,367.34,Ahmed Rasheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+1065,Favara Debit,OUT,420.51,Hussain Shafeeq,UNKNOWN,,DONT_REMEMBER,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+1066,Favara Credit,IN,473.68,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+1067,Favara Credit,IN,51.85,Ahmed Rasheed,REFUND,,REFUND,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+1068,Transfer Credit,IN,105.02,Fathimath Leeza,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+1069,Transfer Debit,OUT,158.19,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+1070,Favara Debit,OUT,211.36,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1071,Favara Credit,IN,263.0,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1072,Purchase,OUT,316.17,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+1073,Purchase,OUT,369.34,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+1074,Purchase,OUT,422.51,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+1075,Purchase,OUT,475.68,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+1076,Bill Payment,OUT,53.85,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+1077,Salary,IN,14469,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+1078,ATM Withdrawal,OUT,160.19,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+1079,Credit Card Payment,OUT,213.36,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+1080,Favara Debit,OUT,265.0,Ahmed Rasheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+1081,Transfer Debit,OUT,318.17,Hussain Shafeeq,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+1082,Favara Debit,OUT,371.34,Ali Shaheed,UNKNOWN,,DONT_REMEMBER,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+1083,Favara Credit,IN,424.51,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+1084,Favara Credit,IN,477.68,Hussain Shafeeq,REFUND,,REFUND,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+1085,Transfer Credit,IN,55.85,Ahmed Rasheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+1086,Transfer Debit,OUT,109.02,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+1087,Favara Debit,OUT,162.19,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1088,Favara Credit,IN,215.36,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1089,Purchase,OUT,267.0,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+1090,Purchase,OUT,320.17,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+1091,Purchase,OUT,373.34,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+1092,Purchase,OUT,426.51,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+1093,Bill Payment,OUT,479.68,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+1094,Salary,IN,11118,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+1095,ATM Withdrawal,OUT,111.02,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+1096,Credit Card Payment,OUT,164.19,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+1097,Favara Debit,OUT,217.36,Hussain Shafeeq,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+1098,Transfer Debit,OUT,269.0,Ali Shaheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+1099,Favara Debit,OUT,322.17,Mariyam Naaz,UNKNOWN,,DONT_REMEMBER,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+1100,Favara Credit,IN,375.34,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+1101,Favara Credit,IN,428.51,Ali Shaheed,REFUND,,REFUND,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+1102,Transfer Credit,IN,481.68,Hussain Shafeeq,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+1103,Transfer Debit,OUT,59.85,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+1104,Favara Debit,OUT,113.02,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1105,Favara Credit,IN,166.19,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1106,Purchase,OUT,219.36,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+1107,Purchase,OUT,271.0,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+1108,Purchase,OUT,324.17,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+1109,Purchase,OUT,377.34,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+1110,Bill Payment,OUT,430.51,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+1111,Salary,IN,12767,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+1112,ATM Withdrawal,OUT,61.85,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+1113,Credit Card Payment,OUT,115.02,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+1114,Favara Debit,OUT,168.19,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+1115,Transfer Debit,OUT,221.36,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+1116,Favara Debit,OUT,273.0,Fathimath Leeza,UNKNOWN,,DONT_REMEMBER,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+1117,Favara Credit,IN,326.17,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+1118,Favara Credit,IN,379.34,Mariyam Naaz,REFUND,,REFUND,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+1119,Transfer Credit,IN,432.51,Ali Shaheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+1120,Transfer Debit,OUT,485.68,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+1121,Favara Debit,OUT,63.85,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1122,Favara Credit,IN,117.02,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1123,Purchase,OUT,170.19,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+1124,Purchase,OUT,223.36,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+1125,Purchase,OUT,275.0,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+1126,Purchase,OUT,328.17,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+1127,Bill Payment,OUT,381.34,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+1128,Salary,IN,14416,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+1129,ATM Withdrawal,OUT,487.68,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+1130,Credit Card Payment,OUT,65.85,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+1131,Favara Debit,OUT,119.02,Mariyam Naaz,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+1132,Transfer Debit,OUT,172.19,Fathimath Leeza,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+1133,Favara Debit,OUT,225.36,Ahmed Rasheed,UNKNOWN,,DONT_REMEMBER,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+1134,Favara Credit,IN,277.0,Freelance Client 3,INCOME,,INCOME,False,True,FREELANCE CLIENT 3,,,Synthetic ground truth; no real user data.
+1135,Favara Credit,IN,330.17,Fathimath Leeza,REFUND,,REFUND,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+1136,Transfer Credit,IN,383.34,Mariyam Naaz,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+1137,Transfer Debit,OUT,436.51,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+1138,Favara Debit,OUT,489.68,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1139,Favara Credit,IN,67.85,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1140,Purchase,OUT,121.02,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+1141,Purchase,OUT,174.19,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+1142,Purchase,OUT,227.36,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+1143,Purchase,OUT,279.0,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+1144,Bill Payment,OUT,332.17,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+1145,Salary,IN,11065,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+1146,ATM Withdrawal,OUT,438.51,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+1147,Credit Card Payment,OUT,491.68,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+1148,Favara Debit,OUT,69.85,Fathimath Leeza,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+1149,Transfer Debit,OUT,123.02,Ahmed Rasheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+1150,Favara Debit,OUT,176.19,Hussain Shafeeq,UNKNOWN,,DONT_REMEMBER,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+1151,Favara Credit,IN,229.36,Freelance Client 4,INCOME,,INCOME,False,True,FREELANCE CLIENT 4,,,Synthetic ground truth; no real user data.
+1152,Favara Credit,IN,281.0,Ahmed Rasheed,REFUND,,REFUND,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+1153,Transfer Credit,IN,334.17,Fathimath Leeza,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,FATHIMATH LEEZA,,,Synthetic ground truth; no real user data.
+1154,Transfer Debit,OUT,387.34,Coral Works LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,CORAL WORKS LLP,,,Synthetic ground truth; no real user data.
+1155,Favara Debit,OUT,440.51,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1156,Favara Credit,IN,493.68,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1157,Purchase,OUT,71.85,Coral Cafe,EXPENSE,Food,AUTO_EXPENSE,True,False,CORAL CAFE,,,Synthetic ground truth; no real user data.
+1158,Purchase,OUT,125.02,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+1159,Purchase,OUT,178.19,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+1160,Purchase,OUT,231.36,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+1161,Bill Payment,OUT,283.0,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+1162,Salary,IN,12714,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+1163,ATM Withdrawal,OUT,389.34,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+1164,Credit Card Payment,OUT,442.51,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+1165,Favara Debit,OUT,495.68,Ahmed Rasheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+1166,Transfer Debit,OUT,73.85,Hussain Shafeeq,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+1167,Favara Debit,OUT,127.02,Ali Shaheed,UNKNOWN,,DONT_REMEMBER,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+1168,Favara Credit,IN,180.19,Freelance Client 1,INCOME,,INCOME,False,True,FREELANCE CLIENT 1,,,Synthetic ground truth; no real user data.
+1169,Favara Credit,IN,233.36,Hussain Shafeeq,REFUND,,REFUND,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+1170,Transfer Credit,IN,285.0,Ahmed Rasheed,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,AHMED RASHEED,,,Synthetic ground truth; no real user data.
+1171,Transfer Debit,OUT,338.17,Digitopia Pvt Ltd,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,DIGITOPIA PVT LTD,,,Synthetic ground truth; no real user data.
+1172,Favara Debit,OUT,391.34,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1173,Favara Credit,IN,444.51,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1174,Purchase,OUT,497.68,Red Banana,EXPENSE,Food,AUTO_EXPENSE,True,False,RED BANANA,,,Synthetic ground truth; no real user data.
+1175,Purchase,OUT,75.85,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+1176,Purchase,OUT,129.02,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+1177,Purchase,OUT,182.19,MPGOOGLE YouTube Premium,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE YOUTUBE PREMIUM,,,Synthetic ground truth; no real user data.
+1178,Bill Payment,OUT,235.36,STELCO BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,STELCO BILLPAY,,,Synthetic ground truth; no real user data.
+1179,Salary,IN,14363,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+1180,ATM Withdrawal,OUT,340.17,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+1181,Credit Card Payment,OUT,393.34,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+1182,Favara Debit,OUT,446.51,Hussain Shafeeq,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+1183,Transfer Debit,OUT,499.68,Ali Shaheed,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+1184,Favara Debit,OUT,77.85,Mariyam Naaz,UNKNOWN,,DONT_REMEMBER,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.
+1185,Favara Credit,IN,131.02,Freelance Client 2,INCOME,,INCOME,False,True,FREELANCE CLIENT 2,,,Synthetic ground truth; no real user data.
+1186,Favara Credit,IN,184.19,Ali Shaheed,REFUND,,REFUND,False,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+1187,Transfer Credit,IN,237.36,Hussain Shafeeq,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,HUSSAIN SHAFEEQ,,,Synthetic ground truth; no real user data.
+1188,Transfer Debit,OUT,289.0,Echbees LLP,EXPENSE,Shopping,PAID_FOR_SOMETHING,True,True,ECHBEES LLP,,,Synthetic ground truth; no real user data.
+1189,Favara Debit,OUT,342.17,My Other Bank Account,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1190,Favara Credit,IN,395.34,My Other Bank Account,MONEY_MOVEMENT,,MONEY_MOVED_TO_ME,False,True,MY OTHER BANK ACCOUNT,,,Synthetic ground truth; no real user data.
+1191,Purchase,OUT,448.51,Villa Mart,EXPENSE,Food,AUTO_EXPENSE,True,False,VILLA MART,,,Synthetic ground truth; no real user data.
+1192,Purchase,OUT,26.68,Avas Ride,EXPENSE,Transport,AUTO_EXPENSE,True,False,AVAS RIDE,,,Synthetic ground truth; no real user data.
+1193,Purchase,OUT,79.85,AliExpress,EXPENSE,Shopping,AUTO_EXPENSE,True,False,ALIEXPRESS,,,Synthetic ground truth; no real user data.
+1194,Purchase,OUT,133.02,MPGOOGLE Google One,EXPENSE,Subscriptions,AUTO_EXPENSE,True,False,MPGOOGLE GOOGLE ONE,,,Synthetic ground truth; no real user data.
+1195,Bill Payment,OUT,186.19,Dhiraagu BILLPAY,EXPENSE,Bills,AUTO_EXPENSE,True,False,DHIRAAGU BILLPAY,,,Synthetic ground truth; no real user data.
+1196,Salary,IN,11012,Synthetic Employer Pvt Ltd,INCOME,,AUTO_INCOME,False,False,SYNTHETIC EMPLOYER PVT LTD,,,Synthetic ground truth; no real user data.
+1197,ATM Withdrawal,OUT,291.0,ATM Cash Withdrawal,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,ATM CASH WITHDRAWAL,,,Synthetic ground truth; no real user data.
+1198,Credit Card Payment,OUT,344.17,BML Credit Card Payment,MONEY_MOVEMENT,,AUTO_MOVEMENT,False,False,BML CREDIT CARD PAYMENT,,,Synthetic ground truth; no real user data.
+1199,Favara Debit,OUT,397.34,Ali Shaheed,EXPENSE,Food,PAID_FOR_SOMETHING,True,True,ALI SHAHEED,,,Synthetic ground truth; no real user data.
+1200,Transfer Debit,OUT,450.51,Mariyam Naaz,MONEY_MOVEMENT,,MOVED_RETURNED_MONEY,False,True,MARIYAM NAAZ,,,Synthetic ground truth; no real user data.

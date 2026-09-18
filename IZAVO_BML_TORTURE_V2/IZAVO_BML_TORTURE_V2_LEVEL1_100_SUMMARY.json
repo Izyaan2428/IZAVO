@@ -1,0 +1,17 @@
+{
+  "level": 1,
+  "rows_in_file": 100,
+  "intentional_exact_duplicates": 0,
+  "effective_unique_rows": 100,
+  "ground_truth_expenses": 42,
+  "ground_truth_review_rows": 51,
+  "ground_truth_review_identities": 29,
+  "meaning_counts": {
+    "EXPENSE": 42,
+    "INCOME": 11,
+    "MONEY_MOVEMENT": 34,
+    "REFUND": 7,
+    "UNKNOWN": 6
+  },
+  "important": "Ground truth is the intended correct result, not a prediction of IZAVO's current classifier."
+}
