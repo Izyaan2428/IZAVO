@@ -70,7 +70,7 @@ Light TextHandleMove feedback is used for changed navigation destinations, Add, 
 - Existing Statistics, Smart Import/parser and CSV/Unicode/BOM tests remain passing.
 - Android test sources: compiled successfully, including the existing migration test.
 - Debug APK: assembled successfully.
-- APK: `E:\MobileProjects\app\build\outputs\apk\debug\app-debug.apk`.
+- APK: `app/build/outputs/apk/debug/app-debug.apk` (relative to the repository root).
 
 Added JVM coverage includes trimming, blank fallback, Unicode, emoji-safe length limiting and every greeting boundary. Added Android coverage includes preference persistence, name editing without onboarding/seconds/currency reset, navigation selection/Add callback, Unicode IME entry, completion callback, empty Home and a USD 1,000,000 hero without a fabricated MVR total. The Statistics empty-state test was updated for the new copy.
 
@@ -80,7 +80,7 @@ Room schema/version/migrations: unchanged, version 4. Manifest/permissions: unch
 
 ## Files created
 
-Paths are relative to `E:\MobileProjects`.
+Paths are relative to the repository root.
 
 - `app/src/main/java/com/izavo/app/preferences/DisplayName.kt`
 - `app/src/main/java/com/izavo/app/ui/design/IzavoPolish.kt`
